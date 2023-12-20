@@ -21,8 +21,8 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
               <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="collapsibleNavbar">
-              <ul class="navbar-nav ml-auto">
+            <div class="collapse navbar-collapse justify-content-md-center" id="collapsibleNavbar">
+              <ul class="navbar-nav justify-content-center">
                 <li class="nav-item">
                   <a href="#home" class="nav-link">Home</a>
                 </li>
@@ -40,9 +40,70 @@
                 </li>
               </ul>
             </div>
-            <div class="btn btn-outline-primary btn-lg">DONATE</div>
+            <div class="btn btn-outline-primary btn-lg mx-auto">DONATE</div>
           </div>
         </nav>
+
+        <!-- SHOWCASE SLIDER -->
+    <section id="showcase">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+          <li data-target="#myCarousel" data-slide-to="1"></li>
+          <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+          <div class="carousel-item carousel-image-1 active">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                <h1 class="display-3">Heading One</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                  aperiam vel ullam deleniti reiciendis ratione quod aliquid
+                  inventore vero perspiciatis.
+                </p>
+                <a href="#" class="btn btn-danger btn-lg">Sign Up Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image-2">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block mb-5">
+                <h1 class="display-3">Heading Two</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                  aperiam vel ullam deleniti reiciendis ratione quod aliquid
+                  inventore vero perspiciatis.
+                </p>
+                <a href="#" class="btn btn-primary btn-lg">Learn More</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="carousel-item carousel-image-3">
+            <div class="container">
+              <div class="carousel-caption d-none d-sm-block text-right mb-5">
+                <h1 class="display-3">Heading Three</h1>
+                <p class="lead">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste,
+                  aperiam vel ullam deleniti reiciendis ratione quod aliquid
+                  inventore vero perspiciatis.
+                </p>
+                <a href="#" class="btn btn-success btn-lg">Learn More</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <a href="#myCarousel" data-slide="prev" class="carousel-control-prev">
+          <span class="carousel-control-prev-icon"></span>
+        </a>
+
+        <a href="#myCarousel" data-slide="next" class="carousel-control-next">
+          <span class="carousel-control-next-icon"></span>
+        </a>
+      </div>
 
       <!--FOOTER-->       
       <footer class="text-center text-white" style="background-color: #3f51b5">
