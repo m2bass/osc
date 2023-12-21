@@ -7,24 +7,40 @@ body {
   opacity: 0.9;
   background: #fff; }
   .navbar .nav-item {
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     padding-right: 1.4rem; }
 
 .nav-link {
-  font-family: "Poppins Regular";
+  font-family: 'Poppins', sans-serif;
   color: #03058E;
 
 }
 .btn-outline-primary{
   background-color: #000080;
   color: #fff;
-  font-family: "Poppins Regular";
+  font-family: 'Poppins', sans-serif;
 }
 
+/*
 .navbar .nav-item.active {
   border-left: #444 3px solid;
-}
+}*/
 
 .carousel-item {
-  height: 700px;
+  height: 550px;
+}
+
+.carousel-image-1 {
+  background: url('images/image1.jpg');
+  background-size: cover;
+}
+
+.carousel-image-2 {
+  background: url('images/image2.jpg');
+  background-size: cover;
+}
+
+.carousel-image-3 {
+  background: url('images/image3.jpg');
+  background-size: cover;
 }
