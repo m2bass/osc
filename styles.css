@@ -10,11 +10,32 @@ body {
     font-size: 1.1rem;
     padding-right: 1.4rem; }
 
+/* Default styles for nav links */
 .nav-link {
   font-family: 'Poppins', sans-serif;
   color: #03058E;
-
+  transition: color 0.3s; /* Add a smooth color transition */
 }
+
+/* Hover state */
+.nav-link:hover {
+  color: #ffd700; /* Change color on hover */
+}
+
+/* Active state (current page) */
+.navbar .nav-item.active .nav-link {
+  color: #000080; /* Change color for the active link */
+}
+
+/* Focus state (when link is focused, like when tabbing through links) */
+.nav-link:focus {
+  outline: none; /* Remove the default focus outline */
+  box-shadow: 0 0 5px rgba(0, 0, 128, 0.5); /* Add a subtle box shadow for focus */
+}
+
+/* Add more styles for other link states if needed */
+
+
 .btn-outline-primary{
   background-color: #000080;
   color: #fff;
@@ -30,17 +51,4 @@ body {
   height: 550px;
 }
 
-.carousel-image-1 {
-  background: url('images/image1.jpg');
-  background-size: cover;
-}
 
-.carousel-image-2 {
-  background: url('images/image2.jpg');
-  background-size: cover;
-}
-
-.carousel-image-3 {
-  background: url('images/image3.jpg');
-  background-size: cover;
-}
