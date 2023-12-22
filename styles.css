@@ -34,8 +34,6 @@ body {
 }
 
 /* Add more styles for other link states if needed */
-
-
 .btn-outline-primary{
   background-color: #000080;
   color: #fff;
@@ -48,7 +46,25 @@ body {
 }*/
 
 .carousel-item {
-  height: 550px;
+  height: 450px;
+  
 }
 
+.text-color {
+  color: #000080;
+}
+
+.info-header {
+  width: 50%;
+  margin: auto;
+  border-bottom: 1px #ddd solid;
+ }
+
+
+/* Adjust height for small screens */
+@media (max-width: 767px) {
+  .carousel-item {
+    height: auto; /* Adjust the height as needed for small screens */
+  }
+}
 
