@@ -54,6 +54,9 @@ body {
   color: #000080;
 }
 
+.blue-bg {
+  background-color: #8ECFED;
+}
 .info-header {
   width: 50%;
   margin: auto;
