@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="styles.css">
         <title>OPHELIA SHEEN | WELCOME</title>
     </head>
-    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50" class="bg-warning">
+    <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
       <header class="bg-dark">
         <nav class="navbar navbar-expand-md fixed-top" id="main-nav">
           <div class="container">
@@ -44,7 +44,7 @@
           </div>
         </nav>
       </header>
-
+      <!-- Carousel Section-->
       <section id="slide">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <container  class="bg-danger">
@@ -97,6 +97,7 @@
         </div>
       </section>    
 
+      <!--Intro Section-->
       <section class="py-5 text-center bg-light">
         <div class="container">
           <div class="row">
@@ -105,7 +106,7 @@
                 <h1 class="text-color pb-3">
                   Why Get Involved?
                 </h1>
-                <p class="lead pb-3">
+                <p class="lead">
                   Your support fuels hope, transforms lives, and builds a brighter future for those in need.
                 </p>
               </div>
@@ -113,44 +114,65 @@
           </div>
         </div>
       </section>
-      
 
-      <!--HOME ICON SECTION  -->
-      <section id="home-icons" class="py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-4 mb-4 text-center">
-              <i class="fas fa-cog fa-3x mb-2"></i>
-              <h3>Turning Gears</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
-                veniam.
-              </p>
-            </div>
-            <div class="col-md-4 mb-4 text-center">
-              <i class="fas fa-cloud fa-3x mb-2"></i>
-              <h3>Sending Data</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
-                veniam.
-              </p>
-            </div>
-            <div class="col-md-4 mb-4 text-center">
-              <i class="fas fa-cart-plus fa-3x mb-2"></i>
-              <h3>Making Money</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero,
-                veniam.
-              </p>
-            </div>
+      <!-- PHOTO GALLERY -->
+    <section id="gallery" class="py-5 bg-warning">
+      <div class="container">
+        <h1 class="text-center text-color">Explore Our Programs</h1>
+        <p class="text-center">Click on the photos to discover more</p>
+        <div class="row mb-4">
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/560x560"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="560"
+              data-width="560"
+            >
+              <img
+                src="https://source.unsplash.com/random/560x560"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
           </div>
-        </div>
-      </section>
-            
+
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/561x561"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="561"
+              data-width="561"
+            >
+              <img
+                src="https://source.unsplash.com/random/561x561"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+
+          <div class="col-md-4">
+            <a
+              href="https://source.unsplash.com/random/562x562"
+              data-toggle="lightbox"
+              data-gallery="img-gallery"
+              data-height="562"
+              data-width="562"
+            >
+              <img
+                src="https://source.unsplash.com/random/562x562"
+                alt=""
+                class="img-fluid"
+              />
+            </a>
+          </div>
+        </div>      
   
 
       <!--FOOTER-->       
-      <footer class="text-center text-white" style="background-color: #3f51b5">
+      <footer class="text-center text-white" style="background-color: #4682b4">
           <!-- Grid container -->
           <div class="container">
           <!-- Section: Links -->
@@ -243,12 +265,20 @@
       </div>      
       </footer>
         
-       <!-- JS in footer content to update year-->
-        <script>
-            // Get the current year for the copyright
-            document.getElementById('year').textContent = new Date().getFullYear();
-        </script>
+      
         <script src="https://code.jquery.com/jquery-3.6.2.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
+
+        <script>
+        // Lightbox Init
+        $(document).on('click', '[data-toggle="lightbox"]', function (event) {
+          event.preventDefault();
+          $(this).ekkoLightbox();
+        });         
+         
+        // Get the current year for the copyright
+        document.getElementById('year').textContent = new Date().getFullYear();
+      </script>
     </body>
 </html>
