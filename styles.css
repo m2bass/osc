@@ -57,6 +57,11 @@ body {
 .blue-bg {
   background-color: #8ECFED;
 }
+
+.footer-blue-bg {
+  background-color: #4682b4;
+}
+
 .info-header {
   width: 50%;
   margin: auto;
