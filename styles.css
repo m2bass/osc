@@ -98,10 +98,11 @@ body {
   padding-top: 145px;
 }
 
-#authors img {
+#team img {
   margin-top: -50px; }
-#authors .card:hover {
-  background: #3292a6;
+#team .card:hover {
+  background: #000080;
   color: #fff; }
-#authors .fab {
+#team .fab {
   color: #fff; }
+
