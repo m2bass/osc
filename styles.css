@@ -72,6 +72,11 @@ body {
     border-bottom: 1px hsl(0, 0%, 87%) solid;
     
  }
+.border-left {
+  border-left: 1px hsl(0, 0%, 87%) solid;
+  margin-top: 15px;
+}
+
 /* Adjust height for small screens */
 @media (max-width: 767px) {
   .carousel-item {
