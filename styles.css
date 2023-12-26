@@ -24,7 +24,7 @@ body {
 
 /* Active state (current page) */
 .navbar .nav-item.active .nav-link {
-  color: #000080; /* Change color for the active link */
+  color: red; /* Change color for the active link */
 }
 
 /* Focus state (when link is focused, like when tabbing through links) */
