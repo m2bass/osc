@@ -50,6 +50,35 @@ body {
   
 }
 
+/* dark overlay for carousel */
+#carouselExampleCaptions::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Adjust the opacity (0.5 is 50% transparent black) */
+  z-index: 1; /* Ensure the overlay is above the carousel content */
+}
+
+/* Additional styling for the carousel */
+#carouselExampleCaptions {
+  position: relative; /* Ensure the overlay is relative to the carousel container */
+}
+
+.carousel-caption {
+  z-index: 2; /* Ensure the captions are above the overlay */
+}
+
+/* Optional: Adjust the style of the carousel indicators */
+.carousel-indicators {
+  bottom: 10px; /* Adjust the position of the indicators */
+}
+
+
+
+
 .text-color {
   color: #000080;
 }
