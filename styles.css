@@ -133,3 +133,23 @@ body {
 #team .fab {
   color: #fff; }
 
+/* Add this to your existing CSS or create a new CSS file and link it in your HTML */
+
+.photo_gallery {
+  display: block;
+  overflow: hidden;
+  position: relative;
+  border: 1px solid #ccc;
+  margin: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.photo_gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.photo_gallery:hover {
+  transform: scale(1.05); /* Zoom in a bit on hover (optional) */
+}
